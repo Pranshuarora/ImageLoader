@@ -1,0 +1,53 @@
+.image-container {
+    text-align: center;
+    max-width: 1000px; /* Set the maximum width of the image container */
+    height: 300px; /* Set the height of the image container */
+    margin: 0 auto;
+    background-color: white; /* Set the background color to white */
+    padding: 10px; /* Add some padding around the images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for a nice effect */
+    border-radius: var(--slds-c-card-radius-border, var(--sds-c-card-radius-border, var(--lwc-borderRadiusMedium, 0.25rem))); /* Set the border radius */
+    overflow: hidden; /* Clip any overflow from images */
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Set the height of the image wrapper to 100% */
+    overflow: hidden; /* Clip any overflow from images */
+}
+
+.custom-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Maintain image aspect ratio and fit within the wrapper */
+    max-height: 280px; /* Set a maximum height for the image to fit within the container */
+    max-width: 900px; /* Set a maximum width for the image to fit within the container */
+}
+
+.navigation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px; /* Set the max width for navigation buttons */
+    margin: 0 auto;
+}
+
+.navigation-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 12px; /* Increase the padding to make the buttons bigger */
+}
+
+
+.left-arrow {
+    transform: rotate(0deg); /* Rotate the left arrow to point to the left */
+}
+
+.right-arrow {
+    transform: rotate(0deg);
+}

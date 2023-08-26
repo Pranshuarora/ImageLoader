@@ -1,0 +1,49 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 07-27-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<!-- <template>
+    <div class="image-container">
+        <template if:true={hasContentVersions}>
+            <div class="navigation-container">
+                <button class="navigation-button left-arrow" onclick={showPreviousImage} disabled={disablePrevious}>
+                    <lightning-icon icon-name="utility:left" alternative-text="Previous" size="small"></lightning-icon>
+                </button>
+                <div class="image-wrapper">
+                    <img key={currentImageUrl} class="custom-image" src={currentImageUrl} />
+                </div>
+                <button class="navigation-button right-arrow" onclick={showNextImage} disabled={disableNext}>
+                    <lightning-icon icon-name="utility:right" alternative-text="Next" size="small"></lightning-icon>
+                </button>
+            </div>
+        </template>
+        <template if:true={hasNoContentVersions}>
+            No images found.
+        </template>
+    </div>
+</template> -->
+
+
+<template>
+    <div class="image-container">
+        <template if:true={hasContentVersions}>
+            <div class="navigation-container">
+                <button class="navigation-button left-arrow" onclick={showPreviousImage} disabled={disablePrevious}>
+                    <lightning-icon icon-name="utility:left" alternative-text="Previous" size="small"></lightning-icon>
+                </button>
+                <div class="image-wrapper">
+                    <img class="custom-image" src={currentImageUrl} alt={currentImageUrl} />
+                </div>
+                <button class="navigation-button right-arrow" onclick={showNextImage} disabled={disableNext}>
+                    <lightning-icon icon-name="utility:right" alternative-text="Next" size="small"></lightning-icon>
+                </button>
+            </div>
+        </template>
+        <template if:true={hasNoContentVersions}>
+            No images found.
+        </template>
+    </div>
+</template>
